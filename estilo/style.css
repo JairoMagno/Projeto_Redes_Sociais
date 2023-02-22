@@ -24,19 +24,6 @@ main{
     height: 100vh;
 }
 
-#telefone{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    /*tamanho da foto*/
-    height: 627px;
-    width: 311px;
-    background: url(../imagens/frame-iphone.png);
-    background-repeat: no-repeat;
-}
-
 iframe#tela{
     position: relative;
     top: 12.9%;
@@ -46,6 +33,7 @@ iframe#tela{
 }
 
 #redes_sociais{
+    position: relative;
     text-align: right;
 }
 
@@ -62,4 +50,41 @@ iframe#tela{
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.877);
     transition: transform .2s; /*tempo de mexida*/
+}
+
+.centralized-container { /*Flex-Box*/
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.item {
+    background: url(../imagens/frame-iphone.png);
+    height: 627px;
+    width: 311px;
+}
+
+.telefone{
+    /*tamanho da foto*/
+    height: 627px;
+    width: 311px;
+    background: url(../imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) /*De 600px pra baixo a escala do celular vai pra 70% do valor original*/
+{
+    .telefone {
+        scale: 0.7;
+    }
+}
+
+@media (min-width: 600px) /*De 600px pra cima a escala será mantida*/
+{
+    .telefone {
+        scale: 1.0;
+    }
 }
