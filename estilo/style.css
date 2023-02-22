@@ -61,12 +61,6 @@ iframe#tela{
     width: 100%;
 }
 
-.item {
-    background: url(../imagens/frame-iphone.png);
-    height: 627px;
-    width: 311px;
-}
-
 .telefone{
     /*tamanho da foto*/
     height: 627px;
