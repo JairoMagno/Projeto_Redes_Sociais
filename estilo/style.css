@@ -33,8 +33,9 @@ iframe#tela{
 }
 
 #redes_sociais{
-    position: relative;
-    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 0px;
 }
 
 #redes_sociais img{
